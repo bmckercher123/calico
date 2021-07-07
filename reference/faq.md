@@ -187,7 +187,7 @@ plugin.
     Neutron database to find out state about the entire deployment. That
     state is then reflected to `etcd` and so to Felix.
 -   In certain cases, `etcd` itself contains the master copy of
-    the data. This is because some Docker deployments have an `etcd`
+    the data. This is because some MKE deployments have an `etcd`
     cluster that has the required resiliency characteristics, used to
     store all system configuration and so `etcd` is configured so as to
     be a suitable store for critical data.
@@ -273,8 +273,8 @@ goes into extensive detail about how various Neutron API calls translate into
 
 ## Why isn't the `-p` flag on `docker run` working as expected?
 
-The `-p` flag tells Docker to set up port mapping to connect a port on the
-Docker host to a port on your container via the `docker0` bridge.
+The `-p` flag tells MKE to set up port mapping to connect a port on the
+MKE host to a port on your container via the `docker0` bridge.
 
 If a host's containers are connected to the `docker0` bridge interface, {{site.prodname}}
 would be unable to enforce security rules between workloads on the same host;

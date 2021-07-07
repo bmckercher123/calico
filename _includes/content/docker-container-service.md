@@ -1,4 +1,4 @@
-This section describes how to run `{{site.nodecontainer}}` as a Docker container.
+This section describes how to run `{{site.nodecontainer}}` as an MKE container.
 
 > **Note**: We include examples for systemd, but the commands can be
 > applied to other init daemons such as upstart.
@@ -57,14 +57,14 @@ WantedBy=multi-user.target
 
 Upon start, the systemd service:
 
-  - Confirms Docker is installed under the `[Unit]` section
+  - Confirms MKE is installed under the `[Unit]` section
   - Gets environment variables from the environment file above
   - Removes existing `{{site.nodecontainer}}` container (if it exists)
   - Starts `{{site.nodecontainer}}`
 
 The script also stops the `{{site.nodecontainer}}` container when the service is stopped.
 
-> **Note**: Depending on how you've installed Docker, the name of the Docker service
+> **Note**: Depending on how you've installed MKE, the name of the MKE service
 > under the `[Unit]` section may be different (such as `docker-engine.service`).
 > Be sure to check this before starting the service.
 {: .alert .alert-info}

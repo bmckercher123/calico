@@ -28,7 +28,7 @@ Wait for all the pods to enter `Running` state.
 ```bash
 kubectl get pods --all-namespaces --watch
 ```
-> Note that it may take several minutes to download the necessary Docker images for this demo.
+> Note that it may take several minutes to download the necessary MKE images for this demo.
 
 The management UI runs as a `NodePort` Service on Kubernetes, and shows the connectivity
 of the Services in this example.

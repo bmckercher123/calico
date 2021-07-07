@@ -18,7 +18,7 @@ Use this quickstart to quickly and easily try {{site.prodname}} features.
 
 - Install, but do not start, minikube. {% include open-new-window.html text='How to install minikube' url='https://minikube.sigs.k8s.io/docs/start/#what-youll-need' %}
 - Install kubectl.{% include open-new-window.html text='How to install kubectl' url='https://kubernetes.io/docs/tasks/tools/install-kubectl/' %}
-- Install a minikube driver. For example Docker. A full List of available drivers can be {% include open-new-window.html  text='found here.' url='https://minikube.sigs.k8s.io/docs/drivers/' %}
+- Install a minikube driver. For example, Mirtantis Kubernetes Engine (MKE). A full List of available drivers can be {% include open-new-window.html  text='found here.' url='https://minikube.sigs.k8s.io/docs/drivers/' %}
 
 ### How to
 

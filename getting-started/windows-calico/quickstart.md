@@ -32,7 +32,7 @@ Whether you use etcd or Kubernetes datastore (kdd), the datastore for the Window
   > **Note**: Windows Server version support differs for each Kubernetes version. Review the {% include open-new-window.html text='Windows OS Version Support' url='https://kubernetes.io/docs/setup/production-environment/windows/intro-windows-in-kubernetes/#windows-os-version-support' %} table for the Windows Server versions supported by each Kubernetes version.
   {: .alert .alert-info}
   
-- Container runtime: Docker or containerd installed and running. If containerd is running, it will be used as the container runtime otherwise Docker is assumed.
+- Container runtime: MKE or containerd installed and running. If containerd is running, it will be used as the container runtime otherwise MKE is assumed.
 - Remote access to the Windows node via Remote Desktop Protocol (RDP) or Windows Remote Management (WinRM)
 - Be able to run a command as Administrator using PowerShell.
 - Additionally, for EKS:

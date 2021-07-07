@@ -27,7 +27,7 @@ If you are using the etcd3 database, you can also install {{site.prodname}} with
 | Install {{site.prodname}} with... | Requires                         | Use case                                                     | Supported install methods                      |
 | --------------------------------- | -------------------------------- | ------------------------------------------------------------ | ---------------------------------------------- |
 | Policy only                       | An etcd3 or Kubernetes datastore | Use {{site.prodname}} network policy to control firewalls on non-cluster hosts. | Binary install with/ without a package manager |
-| Networking and network policy     | An etcd3 datastore               | **Networking**<br />Use {{site.prodname}} networking (BGP, or overlay with VXLAN or IP-in-IP) to handle these communications:<br />- pod ↔ pod<br />- pod ↔ host<br /><br />**Note**: {{site.prodname}} does not handle host ↔ host networking; your underlying network must already be set up to handle this. <br /><br />**Policy**<br />Use {{site.prodname}} network policy to control firewalls on your non-cluster hosts. | Docker container                               |
+| Networking and network policy     | An etcd3 datastore               | **Networking**<br />Use {{site.prodname}} networking (BGP, or overlay with VXLAN or IP-in-IP) to handle these communications:<br />- pod ↔ pod<br />- pod ↔ host<br /><br />**Note**: {{site.prodname}} does not handle host ↔ host networking; your underlying network must already be set up to handle this. <br /><br />**Policy**<br />Use {{site.prodname}} network policy to control firewalls on your non-cluster hosts. | MKE container                               |
 
 ### Before you begin
 
@@ -50,6 +50,6 @@ Select an install method.
 
 | Install method                                               | Networking | Policy |
 | ------------------------------------------------------------ | ---------- | ------ |
-| [Docker container](./installation/container)                 | ✓          | ✓      |
+| [MKE container](./installation/container)                 | ✓          | ✓      |
 | [Binary install with package manager](./installation/binary-mgr) |            | ✓      |
 | [Binary install without package manager](./installation/binary) |            | ✓      |

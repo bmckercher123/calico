@@ -182,7 +182,7 @@ ending with an alphanumeric character.
 
 | Configuration parameter | Environment variable    | Description | Schema |
 | ----------------------- | ----------------------- | ----------- | ------ |
-| `InterfacePrefix`       | `FELIX_INTERFACEPREFIX` | The interface name prefix that identifies workload endpoints and so distinguishes them from host endpoint interfaces. Accepts more than one interface name prefix in comma-delimited format, e.g., `tap,cali`. Note: in environments other than bare metal, the orchestrators configure this appropriately.  For example our Kubernetes and Docker integrations set the `cali` value, and our OpenStack integration sets the `tap` value. [Default: `cali`] | string |
+| `InterfacePrefix`       | `FELIX_INTERFACEPREFIX` | The interface name prefix that identifies workload endpoints and so distinguishes them from host endpoint interfaces. Accepts more than one interface name prefix in comma-delimited format, e.g., `tap,cali`. Note: in environments other than bare metal, the orchestrators configure this appropriately.  For example our Kubernetes and MKE integrations set the `cali` value, and our OpenStack integration sets the `tap` value. [Default: `cali`] | string |
 
 #### Felix-Typha Configuration
 
@@ -228,7 +228,7 @@ are set from it.
 
 In OpenStack, we recommend putting all configuration into configuration
 files, since the etcd database is transient (and may be recreated by the
-OpenStack plugin in certain error cases). However, in a Docker
+OpenStack plugin in certain error cases). However, in an MKE
 environment the use of environment variables or etcd is often more
 convenient.
 

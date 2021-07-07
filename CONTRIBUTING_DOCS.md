@@ -31,9 +31,9 @@ We also encourage you to review [Doc site organization](#doc-site-organization),
 
 ### Building the doc site locally
 
-We use GitHub Pages and Jekyll to serve and build our site. While there are [several ways to build the site locally](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/), we recommend using our Docker image and the Makefile in the root of the repo. These will allow you to build the site with a single command.
+We use GitHub Pages and Jekyll to serve and build our site. While there are [several ways to build the site locally](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/), we recommend using our MKE image and the Makefile in the root of the repo. These will allow you to build the site with a single command.
 
-> **Prerequisite**: [Docker](https://docs.docker.com/engine/installation/).
+> **Prerequisite**: [Mirantis Kubernetes Enginer](https://docs.docker.com/engine/installation/).
 
 Navigate into the root of the repo and issue the following command from a terminal prompt.
 
@@ -55,7 +55,7 @@ The Project Calico CI/CD system will generate a site preview automatically with 
 
 ## Checking for broken links
 
-> **Prerequisite**: [Docker](https://docs.docker.com/engine/installation/).
+> **Prerequisite**: [Mirtantis Kubernetes Enginer](https://docs.docker.com/engine/installation/).
 
 To check for broken links, navigate into the root of the repo and issue the following command from a terminal prompt.
 

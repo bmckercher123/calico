@@ -26,7 +26,7 @@ You can use DevStack to install a single node {{site.prodname}}/Kuryr system, wi
     LOGFILE=stack.log
     LOG_COLOR=False
 
-Please follow general Kuryr instructions for creating a Docker network that
+Please follow general Kuryr instructions for creating an MKE network that
 uses Kuryr as its backend, and for launching containers on that network.  Then
 if you look at the IP routing table and iptables, you will see {{site.prodname}} routes to
 the containers.

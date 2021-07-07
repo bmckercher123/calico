@@ -156,9 +156,9 @@ Example:
 >    Successfully applied 1 'policy' resource(s)
 >    ```
 
-### Docker images
+### Mirantis Kubernetes Engine (MKE, formerly Docker) images
 
-Enclose the names of Docker images in backticks. Example: `calico/node`.
+Enclose the names of MKE images in backticks. Example: `calico/node`.
 
 ### URLs
 

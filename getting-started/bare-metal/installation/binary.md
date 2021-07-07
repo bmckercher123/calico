@@ -23,7 +23,7 @@ This guide covers installing Felix, the {{site.prodname}} daemon that handles ne
 
 #### Step 1: Download and extract the binary
 
-This step requires Docker, but it can be run from any machine with Docker installed. It doesn't have to be the host you will run it on (i.e your laptop is fine).
+This step requires Mirantis Kubernetes Engine (MKE), but it can be run from any machine with MKE installed. It doesn't have to be the host you will run it on (i.e your laptop is fine).
 
 1. Use the following command to download the {{site.nodecontainer}} image.
 
